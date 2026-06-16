@@ -10,16 +10,16 @@ la zona y la cantidad de habitaciones.
 
 ## Herramientas:
 
-* **Frontend:**React(Vite),mediante el uso del framework con CSS y JS
-* **Backend:**Spring Boot,Java,Spring Boot JPA.
-* **Comunicacion:**Arquitectura establecida con REST en formato JSON para intercambio de datos entre el frontend y el backend.
-* **Base de datos:**El uso de SQL para gestion con el usuario y sus respectivos datos registrados.
+* **Frontend:** React(Vite),mediante el uso del framework con CSS y JS
+* **Backend:** Spring Boot,Java,Spring Boot JPA.
+* **Comunicacion:** Arquitectura establecida con REST en formato JSON para intercambio de datos entre el frontend y el backend.
+* **Base de datos:** El uso de SQL para gestion con el usuario y sus respectivos datos registrados.
 ## Caracteristicas:
 
-* **Interfaz limpia:**Planteacion moderna enfocada en lectura simple y poco compleja.
-* **Diseño fluido:**Optimizacion para navegacion mediante componentes de interaccion.
-* **Rapidez:**Transferencia ligera de datos en formato JSON para mayor rapidez en la interaccion.
-* **Gestion FullStack:**Manejo completo de datos y procesos desde el formulario hasta el registro en la base de datos.
+* **Interfaz limpia:** Planteacion moderna enfocada en lectura simple y poco compleja.
+* **Diseño fluido:** Optimizacion para navegacion mediante componentes de interaccion.
+* **Rapidez:** Transferencia ligera de datos en formato JSON para mayor rapidez en la interaccion.
+* **Gestion FullStack:** Manejo completo de datos y procesos desde el formulario hasta el registro en la base de datos.
 
 ## Lo que aprendi:
 
