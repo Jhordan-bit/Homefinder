@@ -1,0 +1,74 @@
+.contenedor-formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #0b1435; /* El tono azul oscuro corporativo */
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: sans-serif;
+}
+
+.contenedor-formulario h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.form-publicar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-input label {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.grupo-input input, 
+.grupo-input select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+  background-color: #0f172a;
+  color: white;
+  font-size: 1rem;
+}
+
+.grupo-input input:focus, 
+.grupo-input select:focus {
+  outline: 2px solid #3b82f6; /* Borde azul brillante al seleccionar */
+}
+
+.fila-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.fila-inputs .grupo-input {
+  flex: 1;
+}
+
+.btn-publicar {
+  background-color: #2563eb;
+  color: white;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+.btn-publicar:hover {
+  background-color: #1d4ed8;
+}

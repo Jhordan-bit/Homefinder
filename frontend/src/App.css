@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body, html, #root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#fondo{
+    background-image: url(./assets/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#contenido{
+    padding: 35px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+    left: 0;
+    line-height: 2.0;
+}
+
+#caja-contenido{
+    background-color: #040833;
+    width: 100%;
+    min-height: 20vw;
+    border: black 3px solid;
+    padding: 20px;
+}
+
+#text-contenido{
+ text-align: left;
+ font-family: 'Times New Roman', Times, serif;
+ font-weight: bold;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 120px;
+}
+
+#caja-registro{
+    line-height: 1.5;
+    display: flex;
+}

@@ -1,0 +1,162 @@
+/* Consultar.css */
+
+.contenedor-consultar {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-consultar h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+/* Filtros */
+.barra-filtros {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    background-color: rgba(255,255,255,0.05);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.barra-filtros select,
+.barra-filtros input {
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.btn-filtrar {
+    padding: 0.5rem 1.2rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-filtrar:hover { background-color: #357abd; }
+
+.btn-limpiar {
+    padding: 0.5rem 1.2rem;
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-limpiar:hover { background-color: #666; }
+
+/* Grid de tarjetas */
+.grid-propiedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tarjeta */
+.tarjeta-propiedad {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.tarjeta-propiedad:hover {
+    transform: translateY(-4px);
+}
+
+/* Imagen */
+.tarjeta-imagen {
+    position: relative;
+    height: 180px;
+    background-color: #ddd;
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sin-imagen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Badge Renta/Venta */
+.badge-tipo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-renta { background-color: #4a90e2; }
+.badge-venta { background-color: #27ae60; }
+
+/* Info */
+.tarjeta-info {
+    padding: 1rem;
+}
+
+.tarjeta-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.tarjeta-detalles {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.tarjeta-propietario {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 0.8rem;
+}
+
+.btn-contactar {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.btn-contactar:hover { background-color: #357abd; }
+
+/* Mensajes */
+.mensaje-carga,
+.mensaje-vacio {
+    text-align: center;
+    color: #aaa;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+}

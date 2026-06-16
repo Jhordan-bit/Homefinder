@@ -1,0 +1,104 @@
+/* Perfil.css */
+
+.contenedor-perfil {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.saludo-perfil {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo-perfil {
+    color: #aaa;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+
+.mensaje-perfil {
+    color: #aaa;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+}
+
+/* Lista de propiedades */
+.lista-mis-propiedades {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Tarjeta horizontal */
+.tarjeta-perfil {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding-right: 1.5rem;
+}
+
+/* Imagen */
+.perfil-imagen {
+    width: 160px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: #ddd;
+}
+
+.perfil-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sin-imagen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Info */
+.perfil-info {
+    flex: 1;
+    padding: 0.5rem 0;
+}
+
+.perfil-info h3 {
+    margin: 0 0 0.4rem;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.perfil-info p {
+    margin: 0.2rem 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Botón borrar */
+.btn-borrar {
+    padding: 0.5rem 1.2rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-borrar:hover {
+    background-color: #c0392b;
+}

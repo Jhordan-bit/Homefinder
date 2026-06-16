@@ -1,0 +1,55 @@
+#contenedorfunciones{
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+}
+
+#listafunciones{
+  display: flex;
+}
+
+ul{
+  color: cyan;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  gap: 40px;
+  display: flex;
+}
+
+#contenedorfunciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
+#opciones-sesion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.saludo {
+  color: white;
+  font-weight: bold;
+}
+
+.sin-sesion {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.btn-nav {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #646cff;
+  color: white;
+}
+
+.btn-cerrar {
+  background-color: #e74c3c;
+}
