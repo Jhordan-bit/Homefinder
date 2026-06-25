@@ -51,7 +51,7 @@ public class PropiedadControlador {
             propiedad.setTelefono(telefono);
             propiedad.setTipo(tipo);
             propiedad.setPropietario(propietario);
-            propiedad.setImagenUrl("https://homefinder-backend-4ckh.onrender.com" + nombreArchivo);
+            propiedad.setImagenUrl("https://homefinder-backend-4ckh.onrender.com/uploads/" + nombreArchivo);
 
             return ResponseEntity.ok(propiedadServicio.guardar(propiedad));
 
