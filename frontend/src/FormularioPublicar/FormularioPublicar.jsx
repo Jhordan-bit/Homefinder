@@ -37,7 +37,7 @@ const FormularioPublicacion = () => {
     formData.append('propietario',  usuarioActivo?.usuario || 'Anónimo');
     formData.append('imagen',       datosCasa.imagen); // el archivo real
 
-    const respuesta = await fetch('${API_URL}/propiedades/guardar', {
+    const respuesta = await fetch(`${API_URL}/propiedades/guardar`, {
       method: 'POST',
       body: formData  // sin headers Content-Type, el navegador lo pone solo
     });
