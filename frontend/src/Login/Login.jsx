@@ -23,7 +23,7 @@ const Login = ({ onLoginExitoso }) => {
     setError('');
 
     try {
-      const respuesta = await fetch(`{API_URL}/auth/login`, {
+      const respuesta = await fetch(`${API_URL}/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datosLogin)
