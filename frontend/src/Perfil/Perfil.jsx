@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Perfil.css';
+import { API_URL } from '../api';
 
 function Perfil() {
     const usuarioActivo = JSON.parse(localStorage.getItem('usuarioActivo'));
@@ -14,7 +15,7 @@ function Perfil() {
         setCargando(true);
         try {
             const respuesta = await fetch(
-                `http://localhost:8080/propiedades/mis-propiedades?propietario=${usuarioActivo?.usuario}`
+                `${API_URL}/propiedades/mis-propiedades?propietario=${usuarioActivo?.usuario}`
             );
             const datos = await respuesta.json();
             setPropiedades(datos);
@@ -29,7 +30,7 @@ function Perfil() {
         if (!confirmar) return;
 
         try {
-            const respuesta = await fetch(`http://localhost:8080/propiedades/${id}`, {
+            const respuesta = await fetch(`${API_URL}/propiedades/${id}`, {
                 method: 'DELETE'
             });
 

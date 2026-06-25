@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Consultar.css';
+import { API_URL } from '../api';
 
 function Consultar() {
     const [propiedades, setPropiedades] = useState([]);
@@ -18,7 +19,7 @@ function Consultar() {
     const obtenerPropiedades = async () => {
         setCargando(true);
         try {
-            const respuesta = await fetch('http://localhost:8080/propiedades/todas');
+            const respuesta = await fetch(`${API_URL}/propiedades/todas`);
             const datos = await respuesta.json();
             setPropiedades(datos);
         } catch (err) {
@@ -40,7 +41,7 @@ function Consultar() {
             if (filtros.ubicacion) params.append('ubicacion', filtros.ubicacion);
             if (filtros.tipo)      params.append('tipo', filtros.tipo);
 
-            const respuesta = await fetch(`http://localhost:8080/propiedades/filtrar?${params}`);
+            const respuesta = await fetch(`${API_URL}/propiedades/filtrar?${params}`);
             const datos = await respuesta.json();
             setPropiedades(datos);
         } catch (err) {
