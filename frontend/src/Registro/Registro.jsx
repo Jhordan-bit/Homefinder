@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Registro.css';
+import { API_URL } from '../api';
 
 const Registro = ({ onRegistroExitoso }) => {
   const [datosRegistro, setDatosRegistro] = useState({
@@ -28,7 +29,7 @@ const Registro = ({ onRegistroExitoso }) => {
 
     try {
       // --- Conectar con Spring Boot ---
-      const respuesta = await fetch('http://localhost:8080/auth/registro', {
+      const respuesta = await fetch('${API_URL}/auth/registro', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datosRegistro)

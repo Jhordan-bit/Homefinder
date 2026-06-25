@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FormularioPublicar.css';
+import { API_URL } from '../api';
 
 const FormularioPublicacion = () => {
   const usuarioActivo = JSON.parse(localStorage.getItem('usuarioActivo'));
@@ -36,7 +37,7 @@ const FormularioPublicacion = () => {
     formData.append('propietario',  usuarioActivo?.usuario || 'Anónimo');
     formData.append('imagen',       datosCasa.imagen); // el archivo real
 
-    const respuesta = await fetch('http://localhost:8080/propiedades/guardar', {
+    const respuesta = await fetch('${API_URL}/propiedades/guardar', {
       method: 'POST',
       body: formData  // sin headers Content-Type, el navegador lo pone solo
     });
