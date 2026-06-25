@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/propiedades")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://homefinder-pi.vercel.app/")
 public class PropiedadControlador {
 
     @Autowired
