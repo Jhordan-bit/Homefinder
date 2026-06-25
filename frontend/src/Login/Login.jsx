@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { API_URL } from '../api';
 
 const Login = ({ onLoginExitoso }) => {
   const [datosLogin, setDatosLogin] = useState({
@@ -22,7 +23,7 @@ const Login = ({ onLoginExitoso }) => {
     setError('');
 
     try {
-      const respuesta = await fetch('http://localhost:8080/auth/login', {
+      const respuesta = await fetch(`{API_URL}/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datosLogin)

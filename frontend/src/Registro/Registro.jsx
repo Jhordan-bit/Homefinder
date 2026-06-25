@@ -29,7 +29,7 @@ const Registro = ({ onRegistroExitoso }) => {
 
     try {
       // --- Conectar con Spring Boot ---
-      const respuesta = await fetch('${API_URL}/auth/registro', {
+      const respuesta = await fetch(`${API_URL}/auth/registro`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(datosRegistro)
