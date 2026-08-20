@@ -16,7 +16,7 @@ import com.backend.backend.servicio.UsuarioServicio;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "https://homefinder-pi.vercel.app/") // Permite que React se comunique con Spring
+@CrossOrigin(origins = "https://homefinder-git-nueva-funcionalidad-jpallares2020-1334s-projects.vercel.app/") // Permite que React se comunique con Spring
 public class AuthControlador {
 
     @Autowired
